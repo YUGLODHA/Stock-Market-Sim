@@ -1,0 +1,1 @@
+This is a simple app that i made for a game on the stock market
