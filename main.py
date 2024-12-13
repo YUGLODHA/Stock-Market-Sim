@@ -42,3 +42,20 @@ if __name__ == '__main__':
 		file = input("Enter The Name of The Save You Want To Load: ")
 		fileLoc = SAVESFOLDER+file+".json"
 		name, balance, stocks, dob, email, phoneno = load(fileLoc)
+
+	# Main Loop
+	while True:
+			os.system("cls")
+			print("=================================Welcome to the Stock Market Simulator=================================")
+			print(f"Portfolio: {name}")
+			print(f"Current Balance: ${balance:.2f}")
+			print("Current Stocks:", end="")
+			for stock in stocks:
+				print("Stock: {stock[0]}:{stock[1]}", end="")
+			print("\nOptions:")
+			print("1. Buy Stock")
+			print("2. Sell Stock")
+			print("3. View Portfolio")
+			print("4. Update Personal Information")
+			print("5. Exit")
+			choice = input("Enter Your Choice: ")
