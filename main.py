@@ -22,6 +22,7 @@ def load(path):
 	return data["name"], data["balance"], data["stocks"], data["dob"], data["email"], data["phoneno"]
 
 if __name__ == '__main__':
+	# Load File and Save File
 	if len(os.listdir(SAVESFOLDER))==0:
 		os.system("cls")
 		print("=================================Welcome to the Stock Market Simulator=================================")
@@ -37,3 +38,7 @@ if __name__ == '__main__':
 		save(savename, name, balance, stocks, dob, email)
 	elif len(os.listdir(SAVESFOLDER))==1:
 		name, balance, stocks, dob, email, phoneno = load(SAVESFOLDER+os.listdir(SAVESFOLDER)[0])
+	else:
+		file = input("Enter The Name of The Save You Want To Load: ")
+		fileLoc = SAVESFOLDER+file+".json"
+		name, balance, stocks, dob, email, phoneno = load(fileLoc)
