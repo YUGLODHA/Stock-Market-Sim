@@ -1,9 +1,9 @@
 {
     "savename": "yugsave",
     "name": "Yug",
-    "balance": 10000.0,
+    "balance": 1000,
     "stocks": [],
     "dob": "09/08/2000",
     "email": "yug@gmail.com",
-    "phoneno": "7878787878"
+    "phoneno": "1234567890"
 }
